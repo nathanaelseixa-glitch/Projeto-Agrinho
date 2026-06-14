@@ -8,11 +8,11 @@ Projeto desenvolvido para o Concurso Agrinho 2026, subcategoria Programação Fr
 
 ## Identificação
 
-- Estudante: **[PREENCHER NOME]**
-- Escola: **[PREENCHER ESCOLA]**
-- Município: **[PREENCHER MUNICÍPIO - PR]**
-- Série/Turma: **[PREENCHER SÉRIE E TURMA]**
-- Professor(a) orientador(a): **[PREENCHER NOME]**
+- Estudante: Nathanael Iargas Seixas
+- Escola: Colégio Estadual Civico Militar Eleutério Fernandes de Andrade
+- Município: Quitandinha - PR
+- Série/Turma: 1ºB Agronegócio
+- Professor(a) orientador(a): Marcos Rubens Teixeira da Silva
 
 ## Objetivo do projeto
 
@@ -123,9 +123,11 @@ Antes da inscrição, o estudante deve:
 
 ### Personalizações realizadas pelo estudante
 
-- **[DESCREVER ALTERAÇÃO 1]**
-- **[DESCREVER ALTERAÇÃO 2]**
-- **[DESCREVER ALTERAÇÃO 3]**
+### Personalizações realizadas pelo estudante
+
+- Escolha do tema e análise das situações que compõem o desafio da safra.
+- Ajustes nos textos, mensagens e reflexões apresentadas ao longo da experiência interativa.
+- Testes completos das alternativas, validação das pontuações e avaliação dos resultados finais do simulador.
 
 ## Participação do professor orientador
 
