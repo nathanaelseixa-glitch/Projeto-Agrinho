@@ -1,126 +1,584 @@
-<blockquote class="manifesto section-shell">
-    <p>
-        “Para mim, o agro de verdade não é só o que a gente planta e colhe hoje na escola. É aprender a usar a tecnologia e a cabeça para garantir que o solo continue bom e que a gente tenha o que colher lá na frente, quando for a nossa vez de cuidar de tudo.”
-    </p>
-    <cite>Nathanael Iargas Seixa</cite>
-</blockquote>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador educativo sobre o equilíbrio entre produção agrícola e preservação ambiental.">
+    <title>Ponto de Equilíbrio | Agrinho 2026</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<section class="reflection-section" aria-labelledby="reflection-title">
-    <div class="reflection-inner section-shell">
-        <p class="eyebrow">O que eu aprendi</p>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Ponto de Equilíbrio - início">
+            <span class="brand-mark" aria-hidden="true">PE</span>
+            <span>Ponto de Equilíbrio</span>
+        </a>
 
-        <h2 id="reflection-title">
-            Minha visão mudou durante o projeto.
-        </h2>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#desafio">Desafio</a>
+            <a href="#metodologia">Metodologia</a>
+            <a href="#processo">Processo</a>
+            <a href="#autor">Autor</a>
+        </nav>
 
-        <blockquote>
-            Antes de iniciar este projeto eu pensava principalmente na produção agrícola.
-            Durante minhas pesquisas percebi que solo, água, biodiversidade e clima também
-            são fundamentais para garantir a produção no futuro.
-
-            Aprendi que pequenas decisões podem gerar grandes impactos e que a tecnologia
-            pode ajudar a encontrar soluções mais sustentáveis.
-
-            Também aprendi mais sobre programação, pensamento computacional e desenvolvimento
-            de soluções digitais voltadas para problemas do mundo real.
-        </blockquote>
-    </div>
-</section>
-
-<section class="region-section" id="regiao" aria-labelledby="region-title">
-    <div class="region-inner section-shell">
-        <div class="region-copy">
-            <p class="eyebrow">Minha região</p>
-
-            <h2 id="region-title">
-                O agro que existe perto de mim
-            </h2>
-
-            <p>
-                Esta parte conecta o tema do concurso com a realidade da comunidade onde vivo.
-            </p>
-
-            <div class="region-report" aria-live="polite">
-
-                <span>
-                    Quitandinha - PR
-                </span>
-
-                <h3>
-                    Produção de hortaliças, milho, feijão, erva-mate e agricultura familiar
-                </h3>
-
-                <p>
-                    A agricultura faz parte da economia e da cultura local. Muitas famílias dependem da produção rural para sua renda e abastecimento. O trabalho no campo contribui para a alimentação da população e fortalece o desenvolvimento do município.
-                </p>
-
-            </div>
+        <div class="accessibility-tools" aria-label="Ferramentas de acessibilidade">
+            <button class="icon-button" id="font-toggle" type="button" title="Aumentar o texto" aria-pressed="false">
+                <span aria-hidden="true">A+</span>
+                <span class="sr-only">Aumentar o texto</span>
+            </button>
+            <button class="icon-button" id="contrast-toggle" type="button" title="Alternar alto contraste" aria-pressed="false">
+                <span aria-hidden="true">◐</span>
+                <span class="sr-only">Alternar alto contraste</span>
+            </button>
         </div>
-    </div>
-</section>
+    </header>
 
-<section class="author-section" id="autor" aria-labelledby="author-title">
-    <div class="author-inner section-shell">
-
-        <div class="author-profile">
-
-            <div class="author-avatar" aria-hidden="true">
-                NI
+    <main id="conteudo">
+        <section class="hero" id="inicio" aria-label="Rota entre uma propriedade rural sustentável e uma escola">
+            <div class="hero-content">
+                <p class="eyebrow">Agrinho 2026</p>
+                <h1>Ponto de<br>Equilíbrio</h1>
+                <p class="hero-lead">Produzir mais não precisa significar preservar menos. Você consegue conduzir uma safra sem deixar o futuro para trás?</p>
+                <a class="primary-button" href="#desafio">
+                    Começar o desafio
+                    <span aria-hidden="true">↓</span>
+                </a>
             </div>
 
+            <div class="hero-stamp" aria-label="Tema do projeto">
+                <strong>Agro forte</strong>
+                <span>futuro sustentável</span>
+            </div>
+        </section>
+
+        <section class="opening section-shell" aria-labelledby="opening-title">
+            <div class="section-number" aria-hidden="true">01</div>
+            <div class="opening-copy">
+                <p class="eyebrow">Uma decisão muda tudo</p>
+                <h2 id="opening-title">Nem toda grande colheita é uma vitória.</h2>
+            </div>
+            <p class="opening-text">
+                Uma produção só é realmente forte quando cuida dos recursos que permitirão a próxima safra.
+                Neste simulador, cada escolha mexe com cinco indicadores. O objetivo não é aumentar apenas
+                a produção, mas encontrar equilíbrio entre alimento, água, solo, biodiversidade e clima.
+            </p>
+        </section>
+
+        <section class="challenge-section" id="desafio" aria-labelledby="challenge-title">
+            <div class="section-heading section-shell">
+                <div>
+                    <p class="eyebrow">Experiência interativa</p>
+                    <h2 id="challenge-title">Desafio da Safra</h2>
+                </div>
+                <div class="challenge-intro">
+                    <p>São cinco etapas. Todas as opções têm vantagens e limitações. Analise o contexto antes de decidir.</p>
+                    <button class="mode-button" id="pedagogical-toggle" type="button" aria-pressed="false" aria-controls="pedagogical-guide">
+                        <span aria-hidden="true">i</span>
+                        Explicação pedagógica
+                    </button>
+                </div>
+            </div>
+
+            <aside class="pedagogical-guide section-shell" id="pedagogical-guide" aria-labelledby="guide-title" hidden>
+                <div class="guide-heading">
+                    <div>
+                        <p class="eyebrow">Modo pedagógico ativado</p>
+                        <h3 id="guide-title">O que cada indicador representa?</h3>
+                    </div>
+                    <p>Depois de cada escolha, o simulador explicará por que os indicadores aumentaram ou diminuíram.</p>
+                </div>
+                <div class="indicator-guide">
+                    <article>
+                        <strong>Produção</strong>
+                        <p>Representa a capacidade de gerar alimentos, manter a atividade e atender à comunidade.</p>
+                    </article>
+                    <article>
+                        <strong>Água</strong>
+                        <p>Mede o cuidado com a quantidade e a qualidade da água usada na propriedade.</p>
+                    </article>
+                    <article>
+                        <strong>Solo</strong>
+                        <p>Indica fertilidade, cobertura, estrutura e resistência da terra contra erosão.</p>
+                    </article>
+                    <article>
+                        <strong>Biodiversidade</strong>
+                        <p>Mostra a presença de diferentes plantas, animais e organismos que colaboram com o ambiente.</p>
+                    </article>
+                    <article>
+                        <strong>Clima</strong>
+                        <p>Considera eficiência energética, emissões e escolhas que diminuem impactos climáticos.</p>
+                    </article>
+                </div>
+            </aside>
+
+            <div class="simulator section-shell">
+                <aside class="farm-status" aria-labelledby="status-title">
+                    <div class="status-heading">
+                        <div>
+                            <p class="eyebrow">Painel da propriedade</p>
+                            <h3 id="status-title">Condição atual</h3>
+                        </div>
+                        <span class="season-badge" id="season-badge">Início da safra</span>
+                    </div>
+
+                    <div class="farm-visual" id="farm-visual" aria-hidden="true">
+                        <img src="assets/images/jornada-campo-escola.webp" alt="">
+                        <div class="visual-status">
+                            <span id="visual-status-label">A propriedade está estável</span>
+                        </div>
+                    </div>
+
+                    <div class="metrics" id="metrics">
+                        <div class="metric" data-metric="production">
+                            <div class="metric-label">
+                                <span>Produção</span>
+                                <strong id="production-value">40</strong>
+                            </div>
+                            <div class="metric-track" role="progressbar" aria-label="Produção" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                                <span class="metric-fill"></span>
+                            </div>
+                        </div>
+                        <div class="metric" data-metric="water">
+                            <div class="metric-label">
+                                <span>Água</span>
+                                <strong id="water-value">60</strong>
+                            </div>
+                            <div class="metric-track" role="progressbar" aria-label="Conservação da água" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                                <span class="metric-fill"></span>
+                            </div>
+                        </div>
+                        <div class="metric" data-metric="soil">
+                            <div class="metric-label">
+                                <span>Solo</span>
+                                <strong id="soil-value">60</strong>
+                            </div>
+                            <div class="metric-track" role="progressbar" aria-label="Saúde do solo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                                <span class="metric-fill"></span>
+                            </div>
+                        </div>
+                        <div class="metric" data-metric="biodiversity">
+                            <div class="metric-label">
+                                <span>Biodiversidade</span>
+                                <strong id="biodiversity-value">60</strong>
+                            </div>
+                            <div class="metric-track" role="progressbar" aria-label="Biodiversidade" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                                <span class="metric-fill"></span>
+                            </div>
+                        </div>
+                        <div class="metric" data-metric="climate">
+                            <div class="metric-label">
+                                <span>Clima</span>
+                                <strong id="climate-value">60</strong>
+                            </div>
+                            <div class="metric-track" role="progressbar" aria-label="Impacto climático" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                                <span class="metric-fill"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="balance-readout">
+                        <span>Equilíbrio ambiental</span>
+                        <strong id="environment-average">60%</strong>
+                    </div>
+                </aside>
+
+                <div class="mission-panel">
+                    <div id="mission-content">
+                        <div class="mission-progress" aria-label="Progresso do desafio">
+                            <span id="stage-counter">Etapa 1 de 5</span>
+                            <div class="stage-dots" id="stage-dots" aria-hidden="true"></div>
+                        </div>
+
+                        <p class="mission-kicker" id="mission-kicker">Preparação</p>
+                        <h3 id="mission-title">Como preparar o solo?</h3>
+                        <p class="mission-context" id="mission-context"></p>
+
+                        <fieldset class="choices">
+                            <legend>Escolha uma estratégia</legend>
+                            <div class="choice-list" id="choice-list"></div>
+                        </fieldset>
+
+                        <div class="feedback" id="feedback" tabindex="-1" aria-live="polite" hidden>
+                            <strong id="feedback-title"></strong>
+                            <p id="feedback-text"></p>
+                            <div class="pedagogical-feedback" id="pedagogical-feedback" hidden>
+                                <h4>Por que os indicadores mudaram?</h4>
+                                <dl id="impact-explanation"></dl>
+                            </div>
+                        </div>
+
+                        <button class="next-button" id="next-button" type="button" hidden>
+                            Próxima etapa
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                    <div class="result" id="result" aria-live="polite" hidden>
+                        <div class="result-heading">
+                            <div>
+                                <p class="eyebrow">Resultado da sua safra</p>
+                                <div class="score-ring">
+                                    <span id="score-value">0</span>
+                                    <small>pontos</small>
+                                </div>
+                            </div>
+                            <div class="result-copy">
+                                <h3 id="result-title" tabindex="-1"></h3>
+                                <p id="result-message"></p>
+                            </div>
+                        </div>
+
+                        <div class="result-visuals">
+                            <div class="radar-panel">
+                                <h4>Mapa dos indicadores</h4>
+                                <canvas id="radar-chart" width="460" height="360" aria-label="Gráfico radar com os cinco indicadores finais"></canvas>
+                                <ul class="chart-fallback" id="chart-fallback"></ul>
+                            </div>
+
+                            <div class="achievements-panel">
+                                <h4>Conquistas da safra</h4>
+                                <div class="achievements-list" id="achievements-list"></div>
+                            </div>
+                        </div>
+
+                        <div class="result-summary">
+                            <div>
+                                <span>Produção final</span>
+                                <strong id="final-production">0%</strong>
+                            </div>
+                            <div>
+                                <span>Ambiente final</span>
+                                <strong id="final-environment">0%</strong>
+                            </div>
+                        </div>
+
+                        <div class="result-actions">
+                            <button class="primary-button" id="certificate-button" type="button">
+                                Ver certificado
+                                <span aria-hidden="true">↓</span>
+                            </button>
+                            <button class="outline-button restart-button" id="restart-button" type="button">
+                                Refazer desafio
+                                <span aria-hidden="true">↻</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <details class="decision-history section-shell">
+                <summary>Ver histórico das minhas decisões</summary>
+                <ol id="decision-log">
+                    <li>Nenhuma decisão tomada ainda.</li>
+                </ol>
+            </details>
+
+            <section class="certificate section-shell" id="certificate" aria-labelledby="certificate-title" hidden>
+                <div class="certificate-paper">
+                    <div class="certificate-mark" aria-hidden="true">PE</div>
+                    <p class="certificate-label">Certificado de</p>
+                    <h3 id="certificate-title">Guardião do Equilíbrio</h3>
+                    <p>Parabéns, <strong id="certificate-person">participante</strong>!</p>
+                    <p>Você concluiu o Desafio da Safra com <strong><span id="certificate-score">0</span> pontos</strong>.</p>
+                    <p class="certificate-message">Sua pontuação demonstra seu entendimento sobre o equilíbrio entre produção agrícola e preservação ambiental.</p>
+                    <div class="certificate-signatures">
+                        <span>Projeto Ponto de Equilíbrio</span>
+                        <span>Agrinho 2026</span>
+                    </div>
+                </div>
+
+                <form class="certificate-controls" id="certificate-form">
+                    <div class="form-field">
+                        <label for="certificate-name">Nome no certificado</label>
+                        <input id="certificate-name" name="certificateName" type="text" maxlength="50" placeholder="Digite seu nome" required>
+                    </div>
+                    <button class="secondary-button" id="print-certificate" type="submit">Imprimir certificado</button>
+                    <button class="outline-button" id="pdf-certificate" type="button">Baixar como PDF</button>
+                    <p class="print-help" id="print-help" aria-live="polite">Para criar o PDF, escolha “Salvar como PDF” na janela de impressão.</p>
+                </form>
+            </section>
+        </section>
+
+        <section class="methodology-section" id="metodologia" aria-labelledby="methodology-title">
+            <div class="section-heading section-shell">
+                <div>
+                    <p class="eyebrow">Como o projeto funciona</p>
+                    <h2 id="methodology-title">Metodologia</h2>
+                </div>
+                <p>O simulador não procura uma resposta perfeita. Ele compara consequências e valoriza decisões que mantêm os indicadores próximos.</p>
+            </div>
+
+            <div class="methodology-grid section-shell">
+                <article>
+                    <span>01</span>
+                    <h3>Objetivo</h3>
+                    <p>Administrar uma safra e compreender que produtividade, recursos naturais e comunidade fazem parte do mesmo sistema.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Pontuação</h3>
+                    <p>A nota combina 45% de produção e 55% da média ambiental. Uma diferença muito grande entre os dois lados reduz o resultado.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Indicadores</h3>
+                    <p>Cada escolha soma ou retira pontos de produção, água, solo, biodiversidade e clima, sempre dentro da escala de 0 a 100.</p>
+                </article>
+                <article>
+                    <span>04</span>
+                    <h3>Aprendizagem</h3>
+                    <p>O jogador compara vantagens, limitações e efeitos de curto e longo prazo antes de tomar uma decisão.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="learning-section" id="aprendizados" aria-labelledby="learning-title">
+            <div class="section-heading section-shell">
+                <div>
+                    <p class="eyebrow">O raciocínio por trás do jogo</p>
+                    <h2 id="learning-title">Caminhos para o equilíbrio</h2>
+                </div>
+                <p>A tecnologia ajuda, mas o resultado depende de como ela é usada e das escolhas feitas todos os dias.</p>
+            </div>
+
+            <div class="learning-grid section-shell">
+                <article class="learning-item">
+                    <span class="learning-index">A</span>
+                    <h3>Solo vivo</h3>
+                    <p>Rotação de culturas, análise da terra e cobertura vegetal ajudam a manter a capacidade de produzir.</p>
+                </article>
+                <article class="learning-item">
+                    <span class="learning-index">B</span>
+                    <h3>Água na medida</h3>
+                    <p>Monitorar a umidade permite escolher quando e quanto irrigar, evitando desperdício e perdas.</p>
+                </article>
+                <article class="learning-item">
+                    <span class="learning-index">C</span>
+                    <h3>Vida como aliada</h3>
+                    <p>O manejo integrado combina observação, controle biológico e intervenção localizada quando necessária.</p>
+                </article>
+                <article class="learning-item">
+                    <span class="learning-index">D</span>
+                    <h3>Energia e logística</h3>
+                    <p>Eficiência, fontes renováveis e rotas planejadas reduzem impactos depois que o alimento sai do campo.</p>
+                </article>
+            </div>
+
+            <blockquote class="manifesto section-shell">
+                <p>“Para mim, o agro de verdade não é só o que a gente planta e colhe hoje na escola. É aprender a usar a tecnologia e a cabeça para garantir que o solo continue bom e que a gente tenha o que colher lá na frente, quando for a nossa vez de cuidar de tudo.”</p>
+                <cite>Nathanael Iargas Seixas</cite>
+            </blockquote>
+        </section>
+
+        <section class="reflection-section" aria-labelledby="reflection-title">
+            <div class="reflection-inner section-shell">
+                <p class="eyebrow">O que eu aprendi</p>
+                <h2 id="reflection-title">Minha visão mudou durante o projeto.</h2>
+                <blockquote>
+                    Antes de iniciar este projeto eu pensava principalmente na produção agrícola. Durante minhas pesquisas percebi que solo, água, biodiversidade e clima também são fundamentais para garantir a produção no futuro. Aprendi que pequenas decisões podem gerar grandes impactos e que a tecnologia pode ajudar a encontrar soluções mais sustentáveis.
+                </blockquote>
+                <p class="personalization-note"></p>
+            </div>
+        </section>
+
+        <section class="process-section" id="processo" aria-labelledby="process-title">
+            <div class="section-heading section-shell">
+                <div>
+                    <p class="eyebrow">Diário de desenvolvimento</p>
+                    <h2 id="process-title">Da pesquisa à publicação</h2>
+                </div>
+                <p>Registrar o processo ajuda a mostrar o que foi estudado, testado e melhorado durante o projeto.</p>
+            </div>
+
+            <ol class="timeline section-shell">
+                <li>
+                    <span>Etapa 1</span>
+                    <h3>Pesquisa sobre o tema</h3>
+                    <p>Consultei materiais sobre manejo do solo, uso consciente da água, biodiversidade, energia e desperdício de alimentos.</p>
+                </li>
+                <li>
+                    <span>Etapa 2</span>
+                    <h3>Planejamento do simulador</h3>
+                    <p>Organizei cinco situações da safra e defini como cada decisão poderia alterar os indicadores.</p>
+                </li>
+                <li>
+                    <span>Etapa 3</span>
+                    <h3>Desenvolvimento do código</h3>
+                    <p>Criei a estrutura em HTML, a identidade visual em CSS e as regras do desafio em JavaScript.</p>
+                </li>
+                <li>
+                    <span>Etapa 4</span>
+                    <h3>Testes e correções</h3>
+                    <p>Testei botões, pontuação, acessibilidade e diferentes tamanhos de tela, corrigindo problemas encontrados.</p>
+                </li>
+                <li>
+                    <span>Etapa 5</span>
+                    <h3>Publicação do projeto</h3>
+                    <p>Organizei os arquivos, revisei a documentação e preparei o repositório para o GitHub Pages.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="region-section" id="regiao" aria-labelledby="region-title">
+            <div class="region-inner section-shell">
+                <div class="region-copy">
+                    <p class="eyebrow">Minha região</p>
+                    <h2 id="region-title">O agro que existe perto de mim</h2>
+                    <p>Esta parte conecta o tema do concurso com a realidade da comunidade onde o estudante vive.</p>
+
+                    <div class="region-report" id="region-report" aria-live="polite">
+                        <span id="region-municipality">[PREENCHA O MUNICÍPIO]</span>
+                        <h3 id="region-activities">[PREENCHA AS PRINCIPAIS ATIVIDADES AGRÍCOLAS]</h3>
+                        <p id="region-relationship">[ESCREVA COMO A AGRICULTURA SE RELACIONA COM A COMUNIDADE LOCAL]</p>
+                    </div>
+                </div>
+
+                <form class="editable-form" id="region-form">
+                    <div class="form-field">
+                        <label for="municipality">Município</label>
+                        <input id="municipality" name="municipality" type="text" maxlength="60" placeholder="Ex.: Cascavel - PR" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="activities">Principais atividades agrícolas</label>
+                        <input id="activities" name="activities" type="text" maxlength="120" placeholder="Ex.: soja, milho e produção leiteira" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="community-relation">Relação com a comunidade</label>
+                        <textarea id="community-relation" name="communityRelation" rows="5" maxlength="420" placeholder="Explique com suas próprias palavras." required></textarea>
+                    </div>
+                    <button class="secondary-button" type="submit">Atualizar minha região</button>
+                    <small>Para a versão publicada, substitua também os textos iniciais diretamente no HTML.</small>
+                </form>
+            </div>
+        </section>
+
+        <section class="author-section" id="autor" aria-labelledby="author-title">
+            <div class="author-inner section-shell">
+                <div class="author-profile">
+                    <div class="author-avatar" aria-hidden="true">EU</div>
+                    <div>
+                        <p class="eyebrow">Sobre o autor</p>
+                        <h2 id="author-title"><span id="author-name-display">[NOME DO ALUNO]</span></h2>
+                        <dl class="author-data">
+                            <div>
+                                <dt>Escola</dt>
+                                <dd id="author-school-display">[NOME DA ESCOLA]</dd>
+                            </div>
+                            <div>
+                                <dt>Cidade</dt>
+                                <dd id="author-city-display">[CIDADE - PR]</dd>
+                            </div>
+                            <div>
+                                <dt>Série/Turma</dt>
+                                <dd id="author-class-display">[SÉRIE E TURMA]</dd>
+                            </div>
+                            <div>
+                                <dt>Orientação</dt>
+                                <dd id="teacher-display">[PROFESSOR(A) ORIENTADOR(A)]</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <p class="author-presentation" id="author-presentation">
+                        Meu nome é [NOME]. Desenvolvi este projeto para o Concurso Agrinho 2026 com o objetivo de mostrar que a produção agrícola e a preservação ambiental podem caminhar juntas. Durante o desenvolvimento aprendi sobre sustentabilidade, manejo do solo, uso consciente da água e tecnologia aplicada ao campo.
+                    </p>
+                </div>
+
+                <details class="author-editor">
+                    <summary>Preencher dados do projeto</summary>
+                    <form class="editable-form" id="author-form">
+                        <div class="form-field">
+                            <label for="author-name">Nome do aluno</label>
+                            <input id="author-name" name="authorName" type="text" maxlength="70" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="author-school">Escola</label>
+                            <input id="author-school" name="authorSchool" type="text" maxlength="100" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="author-city">Cidade</label>
+                            <input id="author-city" name="authorCity" type="text" maxlength="60" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="author-class">Série/Turma</label>
+                            <input id="author-class" name="authorClass" type="text" maxlength="40" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="teacher-name">Professor(a) orientador(a)</label>
+                            <input id="teacher-name" name="teacherName" type="text" maxlength="70" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="author-bio">Apresentação pessoal</label>
+                            <textarea id="author-bio" name="authorBio" rows="6" maxlength="700" required></textarea>
+                        </div>
+                        <button class="secondary-button" type="submit">Atualizar apresentação</button>
+                        <small>Os dados ficam salvos somente neste navegador. Para a entrega, substitua também os campos marcados no HTML.</small>
+                    </form>
+                </details>
+            </div>
+        </section>
+
+        <section class="action-section" id="atitude" aria-labelledby="action-title">
+            <div class="action-inner section-shell">
+                <div class="action-copy">
+                    <p class="eyebrow">Do jogo para a vida</p>
+                    <h2 id="action-title">Qual atitude começa com você?</h2>
+                    <p>Uma mudança pequena, quando vira hábito, deixa de ser pequena. Monte um compromisso pessoal para lembrar depois.</p>
+                </div>
+
+                <form class="commitment-form" id="commitment-form">
+                    <div class="form-field">
+                        <label for="visitor-name">Seu primeiro nome</label>
+                        <input id="visitor-name" name="visitorName" type="text" maxlength="20" autocomplete="given-name" placeholder="Ex.: Ana" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="visitor-action">Atitude que você escolhe</label>
+                        <select id="visitor-action" name="visitorAction" required>
+                            <option value="">Selecione uma atitude</option>
+                            <option value="evitar o desperdício de alimentos">Evitar desperdício de alimentos</option>
+                            <option value="valorizar produtores da minha região">Valorizar produtores da minha região</option>
+                            <option value="economizar água todos os dias">Economizar água todos os dias</option>
+                            <option value="compartilhar o que aprendi sobre produção sustentável">Compartilhar o que aprendi</option>
+                        </select>
+                    </div>
+                    <button class="secondary-button" type="submit">
+                        Criar meu compromisso
+                        <span aria-hidden="true">+</span>
+                    </button>
+                </form>
+
+                <div class="commitment-output" id="commitment-output" aria-live="polite" hidden>
+                    <span>Meu compromisso</span>
+                    <p id="commitment-text"></p>
+                    <small>Este texto fica salvo somente neste navegador.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="sources-section section-shell" aria-labelledby="sources-title">
             <div>
-
-                <p class="eyebrow">Sobre o autor</p>
-
-                <h2 id="author-title">
-                    Nathanael Iargas Seixa
-                </h2>
-
-                <p class="author-credit">
-                    Projeto desenvolvido para o Concurso Agrinho 2026 sob orientação do professor Marcos Rubens Teixeira da Silva.
-                </p>
-
-                <dl class="author-data">
-
-                    <div>
-                        <dt>Escola</dt>
-                        <dd>
-                            Colégio Estadual Cívico-Militar Eleutério Fernandes de Andrade
-                        </dd>
-                    </div>
-
-                    <div>
-                        <dt>Cidade</dt>
-                        <dd>
-                            Quitandinha - PR
-                        </dd>
-                    </div>
-
-                    <div>
-                        <dt>Série/Turma</dt>
-                        <dd>
-                            1º B Agronegócio
-                        </dd>
-                    </div>
-
-                    <div>
-                        <dt>Professor Orientador</dt>
-                        <dd>
-                            Marcos Rubens Teixeira da Silva
-                        </dd>
-                    </div>
-
-                </dl>
+                <p class="eyebrow">Pesquisa e transparência</p>
+                <h2 id="sources-title">Fontes consultadas</h2>
             </div>
+            <ul>
+                <li><a href="https://www.embrapa.br/tema-manejo-integrado-de-pragas" target="_blank" rel="noopener noreferrer">Embrapa: Manejo Integrado de Pragas</a></li>
+                <li><a href="https://www.embrapa.br/tema-manejo-do-solo" target="_blank" rel="noopener noreferrer">Embrapa: Manejo do Solo</a></li>
+                <li><a href="https://www.gov.br/ana/pt-br" target="_blank" rel="noopener noreferrer">Agência Nacional de Águas e Saneamento Básico</a></li>
+            </ul>
+        </section>
+    </main>
 
-            <p class="author-presentation">
-                Meu nome é Nathanael Iargas Seixa e desenvolvi este projeto para o Concurso Agrinho 2026 com o objetivo de mostrar que a produção agrícola e a preservação ambiental podem caminhar juntas.
-
-                Durante o desenvolvimento aprendi sobre sustentabilidade, manejo do solo, uso consciente da água e a importância da tecnologia para ajudar na tomada de decisões no campo.
-
-                O projeto também contribuiu para ampliar meus conhecimentos em programação, pensamento computacional e desenvolvimento de soluções digitais.
-            </p>
-
+    <footer class="site-footer">
+        <div class="section-shell">
+            <div>
+                <strong>Ponto de Equilíbrio</strong>
+                <p>Projeto desenvolvido para o Concurso Agrinho 2026.</p>
+            </div>
+            <p>HTML · CSS · JavaScript</p>
         </div>
-    </div>
-</section>
+    </footer>
+</body>
+</html>
