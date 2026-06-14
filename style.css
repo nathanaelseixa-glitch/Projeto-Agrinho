@@ -2058,12 +2058,3 @@ body.pedagogical-mode .choice-tradeoff {
         animation-iteration-count: 1 !important;
     }
 }
-
-
-.author-credit {
-    margin: 12px 0 22px;
-    color: var(--muted);
-    font-size: 0.95rem;
-    font-style: italic;
-    line-height: 1.5;
-}
